@@ -2,10 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* iOS-inspired design system following Apple HIG */
 @layer base {
   :root {
-    /* iOS System Colors */
     --ios-blue: 214 100% 59%;
     --ios-blue-dark: 214 86% 55%;
     --ios-green: 142 69% 58%;
@@ -18,7 +16,6 @@
     --ios-gray-5: 220 9% 46%;
     --ios-gray-6: 220 14% 25%;
     
-    /* Semantic colors */
     --background: 0 0% 100%;
     --foreground: 220 14% 25%;
     
@@ -47,7 +44,6 @@
     --success: 142 69% 58%;
     --warning: 29 100% 60%;
     
-    /* iOS specific variables */
     --tab-bar-height: 83px;
     --safe-area-inset-bottom: 34px;
     --ios-shadow: 0 0.5px 4px hsl(220 14% 25% / 0.12);
@@ -57,7 +53,6 @@
   }
 
   .dark {
-    /* iOS Dark Mode Colors */
     --background: 0 0% 8%;
     --foreground: 220 14% 96%;
     
@@ -86,7 +81,6 @@
     --success: 142 69% 58%;
     --warning: 29 100% 60%;
     
-    /* iOS dark specific */
     --ios-gray: 220 14% 11%;
     --ios-gray-2: 220 14% 15%;
     --ios-gray-3: 220 9% 25%;
@@ -104,25 +98,24 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
   
-  /* iOS-specific typography */
   .ios-title {
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 700;
     letter-spacing: -0.02em;
   }
   
   .ios-body {
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 400;
   }
   
   .ios-caption {
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 400;
     font-size: 0.75rem;
     color: hsl(var(--muted-foreground));
@@ -130,7 +123,6 @@
 }
 
 @layer components {
-  /* iOS Tab Bar */
   .ios-tab-bar {
     @apply fixed bottom-0 left-0 right-0 bg-card border-t border-border;
     height: var(--tab-bar-height);
@@ -140,7 +132,6 @@
     box-shadow: var(--ios-shadow);
   }
   
-  /* iOS Card */
   .ios-card {
     @apply bg-card rounded-2xl;
     box-shadow: var(--ios-shadow);
@@ -151,10 +142,9 @@
     box-shadow: var(--ios-shadow-elevated);
   }
   
-  /* iOS List */
   .ios-list-item {
     @apply bg-card border-b border-border px-4 py-3;
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 400;
     min-height: 44px;
     display: flex;
@@ -165,7 +155,6 @@
     @apply border-b-0;
   }
   
-  /* iOS Button */
   .ios-button {
     @apply px-6 py-3 rounded-xl font-medium transition-all duration-200;
     min-height: 44px;
@@ -175,14 +164,13 @@
   }
   
   .ios-button-primary {
-    @apply ios-button bg-primary text-primary-foreground;
+    @apply bg-primary text-primary-foreground;
   }
   
   .ios-button-secondary {
-    @apply ios-button bg-secondary text-secondary-foreground;
+    @apply bg-secondary text-secondary-foreground;
   }
   
-  /* iOS Navigation */
   .ios-nav-bar {
     @apply bg-card border-b border-border px-4 py-2;
     backdrop-filter: blur(20px);
@@ -190,7 +178,6 @@
     box-shadow: var(--ios-shadow);
   }
   
-  /* Animations */
   .ios-transition {
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   }
