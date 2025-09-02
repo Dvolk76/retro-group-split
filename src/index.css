@@ -97,9 +97,7 @@
     --ios-shadow: 0 0.5px 4px hsl(0 0% 0% / 0.3);
     --ios-shadow-elevated: 0 1px 8px hsl(0 0% 0% / 0.4);
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
