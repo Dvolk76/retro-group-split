@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				system: ['-apple-system', 'BlinkMacSystemFont', '"SF Pro Text"', '"Helvetica Neue"', 'sans-serif'],
+				display: ['-apple-system', 'BlinkMacSystemFont', '"SF Pro Display"', '"Helvetica Neue"', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -52,6 +56,22 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				ios: {
+					blue: 'hsl(var(--ios-blue))',
+					'blue-dark': 'hsl(var(--ios-blue-dark))',
+					green: 'hsl(var(--ios-green))',
+					red: 'hsl(var(--ios-red))',
+					orange: 'hsl(var(--ios-orange))',
+					gray: 'hsl(var(--ios-gray))',
+					'gray-2': 'hsl(var(--ios-gray-2))',
+					'gray-3': 'hsl(var(--ios-gray-3))',
+					'gray-4': 'hsl(var(--ios-gray-4))',
+					'gray-5': 'hsl(var(--ios-gray-5))',
+					'gray-6': 'hsl(var(--ios-gray-6))',
+				},
+				success: 'hsl(var(--success))',
+				warning: 'hsl(var(--warning))',
+			},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
