@@ -94,6 +94,8 @@
     --ios-gray-5: 220 9% 65%;
     --ios-gray-6: 220 14% 85%;
     
+    --ios-shadow: 0 0.5px 4px hsl(0 0% 0% / 0.3);
+    --ios-shadow-elevated: 0 1px 8px hsl(0 0% 0% / 0.4);
   }
 }
 
