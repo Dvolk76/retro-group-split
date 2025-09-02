@@ -103,7 +103,8 @@
   }
 
   body {
-    @apply bg-background text-foreground font-system;
+    @apply bg-background text-foreground;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -152,7 +153,9 @@
   
   /* iOS List */
   .ios-list-item {
-    @apply bg-card border-b border-border px-4 py-3 ios-body;
+    @apply bg-card border-b border-border px-4 py-3;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+    font-weight: 400;
     min-height: 44px;
     display: flex;
     align-items: center;
